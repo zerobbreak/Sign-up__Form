@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+
+:root {
+  --font-heading: "Norse-Bold";
+  --font-paragraph-size: 20px;
+  --font-paragraph: "Roboto", sans-serif;
+  --font-paragraph-regualar: 400;
+  --font-paragraph-italic: 400;
+  --font-color: #ffffff;
+  --button-color: #596d48;
+  --paragraph-text: #000000;
+  --input-border: 1px solid #e5e7eb;
+  --background-valid: #3d66d6;
+  --background-invalid: #c85157;
+  --background-color: #f9fafb;
+}
+
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("../Assets/Norse-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+.sign-up__container{
+    /* border: 1px solid red; */
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.image__logo-design{
+    background-image: url(../Assets/halie-west-25xggax4bSA-unsplash.jpg);
+    height: 900px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo{
+    /* width: 30%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 140px;
+}
+
+.author, 
+.author a, 
+.title-logo{
+    color: var(--font-color);
+
+}
+
+.title-logo{
+    font-family: var(--font-heading);
+    font-size: 60px;
+}
+
+.author{
+    margin-top: 800px;
+}
+
+.logo-img{
+    height: 30%;
+    width: 20%;
+}
+
+.sign-up__form{
+    background-color: var(--background-color);
+    /* padding: 10px; */
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sign-up__form p{
+    font-family: var(--font-paragraph);
+    font-weight: var(--font-paragraph-regualar);
+    font-size: 15px;
+    margin: 30px;
+}
+.sign-up__form h3{
+    margin: 30px;
+}
+
+.sign-up__form h3, 
+.container__form h3{
+    font-size: 21px;
+}
+
+.form__input-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.container__form{
+    background-color: #ffff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.input-container{
+    margin-right: 60px;
+}
+
+.input-container span{
+    display: block;
+    font-size: 13px;
+    color: red;
+}
+
+.input-container label{
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: var(--font-paragraph);
+    font-weight: var(--font-paragraph-regualar);
+}
+
+.input-container input{
+    border: var(--input-border);
+    height: 20px;
+    border-radius: 3px;
+}
+
+input:valid{
+    border-color: var(--background-valid);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#error-message{
+    color: red;
+    font-size: 10px;
+}
+
+input[type="password"]:invalid {
+    /* Your styles for password input without content go here */
+    border-color: red; /* For example, change the border color to red */
+}
+
+input[type="password"]:valid {
+    /* Your styles for password input without content go here */
+    border-color: var(--background-valid);
+}
+
+#submitbtn{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 30%;
+    height: 40px;
+    outline: none;
+    border-radius: 8px;
+    color: #ffffff;
+    border: none;
+    background-color: var(--button-color);
+    font-weight: var(--font-paragraph-regualar);
+    font-family: var(--font-paragraph);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.login a{
+    text-decoration: none;
+    color: var(--button-color);
+}
